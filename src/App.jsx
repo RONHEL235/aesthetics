@@ -1,6 +1,10 @@
+import Navbar from "./components/Navbar"
+
 const App = () => {
   return (
-    <div>App</div>
+    <main className="overflow-x-hidden antialiased text-neutral-900">
+      <Navbar />
+    </main> 
   )
 }
 
