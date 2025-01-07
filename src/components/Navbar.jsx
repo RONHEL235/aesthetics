@@ -24,11 +24,20 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-8 md:space-x-4 pr-2">
             {RiLinksFill.map((link, index) => (
               <a key={index} href={link.link} className="uppercase text-sm font-medium">
-                {link.name}  
+                {link.name}
+              </a>  
             ))}
           </div>
         </div>
-    </nav
+
+        <div className={`${isOpen? "block" : "hidden"} md:hidden absolute bg-neutral-50 w-full py-5 px-4 mt-2 border-b-4`}>
+            {LINKS.map((link, index) => (
+                <a key={index} href={link.link} className="uppercase text-lg font-medium block py-2 tracking-wide">
+                  {link.name}
+                </a>
+            ))}
+        </div>
+    </nav>
   )
  className="border-b-2"
 
