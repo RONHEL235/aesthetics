@@ -17,9 +17,16 @@ const Navbar = () => {
 
           <div className="md:hidden">
             <button onClick={toggleMenu} className="text-2xl pr-2 focus:outline-none" arial-label={isOpen? "Close Menu" : "Open Menu"}>
-              
+              {isOpen? <RiCloseLine /> : <RiMenu3Line />}
             </button>
-          </div> 
+          </div>
+
+          <div className="hidden md:flex space-x-8 md:space-x-4 pr-2">
+            {RiLinksFill.map((link, index) => (
+              <a key={index} href={link.link} className="uppercase text-sm font-medium">
+                {link.name}  
+            ))}
+          </div>
         </div>
     </nav
   )
