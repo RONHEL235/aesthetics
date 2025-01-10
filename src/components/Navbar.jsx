@@ -39,7 +39,6 @@ const Navbar = () => {
         </div>
     </nav>
   )
- className="border-b-2"
+}
 
-
-export default Navbar
+export default Navbar;
