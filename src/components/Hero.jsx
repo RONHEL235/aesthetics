@@ -1,4 +1,4 @@
-const Hero = () => {
+export const Hero = () => {
   return (
     <section className="max-w-7xl mx-auto border-b-2">
         <div className="flex flex-col items-center my-20"> 
@@ -13,5 +13,3 @@ const Hero = () => {
     </section>
   )
 }
-
-export default Hero
